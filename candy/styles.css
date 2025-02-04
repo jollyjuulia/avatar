@@ -1,0 +1,75 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+.container {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;  /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background image styling */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/mall\ candy.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;  /* Set the background behind content */
+}
+
+/* Styling for items */
+.item {
+    position: absolute;
+    opacity: 0;  /* Start as invisible */
+    transition: transform 1s ease, opacity 1s ease;
+    z-index: 1;  /* Ensure the items are above the background */;
+}
+
+/* Items from left */
+.left-item {
+    transform: translateX(-100%);  /* Start off-screen to the left */
+}
+
+.left-item img{
+    width: 100px
+}
+
+/* Items from right */
+.right-item {
+    transform: translateX(100%);  /* Start off-screen to the right */
+}
+
+.right-item img{
+    width: 100px
+}
+
+/* When items are scrolled into view */
+.item.show {
+    opacity: 1;
+    transform: translateX(0);  /* Move into position */
+}
+
+/* Basic text styles */
+h1, p {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
