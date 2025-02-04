@@ -10,21 +10,25 @@
 </head>
 <body>
    
-    <script src="script.js"></script>
+    
     
 <div class="container">
     <div class="backimg">
         <img src="img/Untitled_Artwork 32.png" class="back-img">
     </div>
-    <div class="text-box" id="spyText">
+    <!-- <div class="text-box" id="spyText">
         <p></p>
+    </div> -->
+    <div id="text-container" class="text-container">
+        
     </div>
+  
     <div class="ispy">
         
         <!-- <h2>I Spy</h2> -->
-        <div class="text-box" id="spyText">
+        <!-- <div class="text-box" id="spyText">
             <p></p>
-        </div>
+        </div> -->
     </div>
 
 
@@ -47,6 +51,12 @@
         <img src="img/jacket.png" class="png-img" alt="Third image" id="image3">
        
     </div>
+
+    <div class="scholastic">
+        
+        <img src="img/xuw21udmp4o91-2.jpg" class="pngimg" alt="fourth image" id="image4">
+       
+    </div>
     <!-- </div> -->
 
 </div>
@@ -58,11 +68,12 @@
         <img src="image2.jpg" alt="Second image" id="image2">
         <img src="image3.jpg" alt="Third image" id="image3">
     </div> -->
-    <script>
+    <!-- <script>
         const spyText = document.getElementById("spyText");
         const image1 = document.getElementById("image1");
         const image2 = document.getElementById("image2");
         const image3 = document.getElementById("image3");
+        const image4 = document.getElementById("image4");
         // Store default text
         const defaultText = "....";
         // Hover effects
@@ -70,7 +81,7 @@
             spyText.textContent = "candy.";
             spyText.style.fontFamily = "serif"; // Adjust font family
             spyText.style.fontSize = "40px"; // Adjust font size
-            spyText.style.color = "blue"; // Adjust font color
+            spyText.style.color = "yellow"; // Adjust font color
             spyText.style.textAlign = "center";
            
             spyText.style.bottom = "20px"; // Adjust this value to move the text lower
@@ -81,15 +92,26 @@
             spyText.textContent = "makeup.";
             spyText.style.fontFamily = "serif"; // Adjust font family
             spyText.style.fontSize = "40px"; // Adjust font size
-            spyText.style.color = "blue"; // Adjust font color
+            spyText.style.color = "yellow"; // Adjust font color
             spyText.style.textAlign = "center";
         });
         image3.addEventListener("mouseenter", () => {
             spyText.textContent = "a bomber jacket from 2017.";
             spyText.style.fontFamily = "serif"; // Adjust font family
             spyText.style.fontSize = "40px"; // Adjust font size
-            spyText.style.color = "blue"; // Adjust font color
+            spyText.style.color = "yellow"; // Adjust font color
             spyText.style.textAlign = "center";
+        });
+
+        image4.addEventListener("mouseenter", () => {
+            spyText.textContent = "bookfair catalog";
+            spyText.style.fontFamily = "serif"; // Adjust font family
+            spyText.style.fontSize = "40px"; // Adjust font size
+            spyText.style.color = "yellow"; // Adjust font color
+            spyText.style.textAlign = "center";
+           
+            spyText.style.bottom = "20px"; // Adjust this value to move the text lower
+           
         });
         // Reset text on mouse leave
         image1.addEventListener("mouseleave", () => {
@@ -101,7 +123,10 @@
         image3.addEventListener("mouseleave", () => {
             spyText.textContent = defaultText;
         });
-    </script>
+        image4.addEventListener("mouseleave", () => {
+            spyText.textContent = defaultText;
+        });
+    </script> -->
     
     <!-- <div class="landing">
         <div class="left">
@@ -120,6 +145,8 @@
     </div>
  </body>
 </html> -->
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -65,6 +65,14 @@ body {
     cursor: url('img/magGlass.png') 30 30, auto;
     background-image: url(img/new.png);
    background-size: cover;
+body, img:hover {
+    cursor: url('img/magGlass.png') 30 30, auto;
+}
+
+img:hover {
+    transform: scale(1.1); /* Grow the image */
+    rotate: -15deg
+}
    
 }
 
@@ -96,15 +104,15 @@ h1 {
 }
 
 .makeup{
-    grid-area: 10 / 4 / 13 / 6;
+    grid-area: 6 / 3 / 8 / 4;
 }
 
 .makeup img{
     display: block;
     width: 300px;
     /* height: 100px; */
-    rotate: -38deg;
-    transform: translateY(-240px) translateX(12px); /* Scoot up a little and to the left */
+    /* rotate: -38deg; */
+    /* Scoot up a little and to the left */
 }
 
 
@@ -116,8 +124,7 @@ h1 {
     display: block;
     width: 225px;
    
-    rotate: 20deg;
-    transform: translateY(40px) translateX(215px); /* Move down and to the left */
+   /* Move down and to the left */
     
 }
 
@@ -141,6 +148,18 @@ h1 {
 /* Change image on hover */
 .png-img:hover {
     content: url('img/jacket\ copy.png'); /* Switch to colored version */
+}
+
+
+.pngimg {
+   
+    height: auto;
+    transition: 0.3s ease; /* Smooth transition */
+}
+
+/* Change image on hover */
+.pngimg:hover {
+    content: url('img/xuw21udmp4o91-2\ copy.jpg'); /* Switch to colored version */
 }
 
 .p-img {
@@ -196,7 +215,7 @@ h1 {
 }
 
 .text-box{
-grid-area: 3/4/5/6; /* Move the text box up by changing the grid area */
+grid-area: 3/4/5/7; /* Move the text box up by changing the grid area */
 z-index: 3;
 display: flex;
 justify-content: center;
@@ -204,7 +223,38 @@ align-items: center;
 /* margin-bottom: 100px; */
 /* margin-right: -200px; */
 justify-content: center;
-align-items: center;
+/* align-items: center; */
 margin-top: 40px;
+flex-direction: row;
 
+}
+
+.scholastic{
+    grid-area: 3/7/4/8;
+}
+.scholastic img{
+ 
+        display: inline;
+        width: 225px;
+       
+        rotate: 20deg;
+        transform: translateY(px) translateX(215px); /* Move down and to the left */
+        
+    
+}
+
+/* Basic styling for the text container */
+.text-container {
+    grid-area: 3/3/5/7; /* Move the text box up by changing the grid area */
+z-index: 3;
+display: flex;
+
+align-items: center;
+justify-content: center;
+flex-direction: row;
+font-family: serif;
+font-size: 28px;
+color: yellow;
+margin-bottom: 90px;
+margin-right: 40px;
 }
