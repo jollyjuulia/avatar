@@ -62,9 +62,10 @@
 
 
 body {
-    background-image: url(img/ispy.jpg);
+    cursor: url('img/magGlass.png') 30 30, auto;
+    background-image: url(img/new.png);
    background-size: cover;
-   cursor: url('img/glass.png'), auto; /* Path to your custom cursor image */
+   
 }
 
 h1 {
@@ -116,7 +117,7 @@ h1 {
     width: 225px;
    
     rotate: 20deg;
-    transform: translateY(40px) translateX(-215px); /* Move down and to the left */
+    transform: translateY(40px) translateX(215px); /* Move down and to the left */
     
 }
 
@@ -157,12 +158,7 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 25vh; /* 25% of the viewport height */
-    background-color: yellow;
-    justify-content: flex-start;
-    border: 5px solid blue; /* Blue border */
-    border-radius: 20px; /* Rounded corners */
-    -webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%); /* Cut off corners for Safari */
-    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%); /* Cut off corners */
+    
 }
 
 .ispy h2{
@@ -174,6 +170,7 @@ h1 {
     color: red;
    margin-top: -5px;
    margin-bottom: 0px;
+   letter-spacing: 10px;
 }
 
 .ispy p{
@@ -183,4 +180,31 @@ h1 {
     font-style: normal;
     font-size: 50px;
     margin-top: 0; /* Remove top margin */
+}
+
+
+.back-img{
+    width: 600px;
+    grid-area: 1/4/4/6;
+    justify-content: center;
+}
+
+.backimg{
+    grid-area: 1/3/3/5;
+    transform: translate(120px, -95px); /* Move higher and to the right */
+    z-index: -1;
+}
+
+.text-box{
+grid-area: 3/4/5/6; /* Move the text box up by changing the grid area */
+z-index: 3;
+display: flex;
+justify-content: center;
+align-items: center;
+/* margin-bottom: 100px; */
+/* margin-right: -200px; */
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+
 }

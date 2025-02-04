@@ -49,7 +49,7 @@ body {
 }
 
 .left-item img{
-    width: 100px
+    width: 200px
 }
 
 /* Items from right */
@@ -58,7 +58,7 @@ body {
 }
 
 .right-item img{
-    width: 100px
+    width: 200px
 }
 
 /* When items are scrolled into view */
@@ -72,4 +72,47 @@ h1, p {
     font-size: 2rem;
     color: white;
     text-align: center;
+}
+
+.asset {
+    position: relative;
+    width: 300px;
+    height: 300px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 2;
+  
+}
+
+/* Add the tilt effect on hover */
+.asset:hover {
+    transform: rotate(10deg); /* Slight tilt */
+    
+}
+
+.asset::after {
+    content: "★"; /* Star character */
+    position: absolute;
+    font-size: 250px;
+    color: rgb(242, 255, 3);
+    opacity: 0; /* Initially hidden */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Prevent the star from blocking interaction */
+    z-index: -1;
+   
+}
+
+/* When hovering over the asset, make the star visible and animate */
+.asset:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5); /* Make the star "pop" */
 }

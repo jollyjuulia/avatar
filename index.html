@@ -13,35 +13,95 @@
     <script src="script.js"></script>
     
 <div class="container">
+    <div class="backimg">
+        <img src="img/Untitled_Artwork 32.png" class="back-img">
+    </div>
+    <div class="text-box" id="spyText">
+        <p></p>
+    </div>
     <div class="ispy">
-        <h2>I Spy....</h2>
-        <p>bomber jacket from 2017</p>
+        
+        <!-- <h2>I Spy</h2> -->
+        <div class="text-box" id="spyText">
+            <p></p>
+        </div>
     </div>
 
 
-
+    <!-- <div class="image-container"> -->
 
     <div class="candy">
         <a href="candy/index.html">
-            <img src="img/candhy.png" class="p-img">
+            <img src="img/candhy.png" class="p-img" alt="First image" id="image1">
         </a>
     </div>
 
     <div class="makeup">
         
-        <img src="img/makeup bw.png" class="png-image">
+        <img src="img/makeup bw.png" class="png-image" alt="Second image" id="image2">
        
     </div>
 
     <div class="jacket">
         
-        <img src="img/jacket.png" class="png-img">
+        <img src="img/jacket.png" class="png-img" alt="Third image" id="image3">
        
     </div>
+    <!-- </div> -->
 
 </div>
 
 
+<!-- <div class="text-box" id="spyText">I spy a bomber jacket from 2017</div>
+    <div class="image-container">
+        <img src="image1.jpg" alt="First image" id="image1">
+        <img src="image2.jpg" alt="Second image" id="image2">
+        <img src="image3.jpg" alt="Third image" id="image3">
+    </div> -->
+    <script>
+        const spyText = document.getElementById("spyText");
+        const image1 = document.getElementById("image1");
+        const image2 = document.getElementById("image2");
+        const image3 = document.getElementById("image3");
+        // Store default text
+        const defaultText = "....";
+        // Hover effects
+        image1.addEventListener("mouseenter", () => {
+            spyText.textContent = "candy.";
+            spyText.style.fontFamily = "serif"; // Adjust font family
+            spyText.style.fontSize = "40px"; // Adjust font size
+            spyText.style.color = "blue"; // Adjust font color
+            spyText.style.textAlign = "center";
+           
+            spyText.style.bottom = "20px"; // Adjust this value to move the text lower
+           
+        });
+        
+        image2.addEventListener("mouseenter", () => {
+            spyText.textContent = "makeup.";
+            spyText.style.fontFamily = "serif"; // Adjust font family
+            spyText.style.fontSize = "40px"; // Adjust font size
+            spyText.style.color = "blue"; // Adjust font color
+            spyText.style.textAlign = "center";
+        });
+        image3.addEventListener("mouseenter", () => {
+            spyText.textContent = "a bomber jacket from 2017.";
+            spyText.style.fontFamily = "serif"; // Adjust font family
+            spyText.style.fontSize = "40px"; // Adjust font size
+            spyText.style.color = "blue"; // Adjust font color
+            spyText.style.textAlign = "center";
+        });
+        // Reset text on mouse leave
+        image1.addEventListener("mouseleave", () => {
+            spyText.textContent = defaultText;
+        });
+        image2.addEventListener("mouseleave", () => {
+            spyText.textContent = defaultText;
+        });
+        image3.addEventListener("mouseleave", () => {
+            spyText.textContent = defaultText;
+        });
+    </script>
     
     <!-- <div class="landing">
         <div class="left">
