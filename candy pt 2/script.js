@@ -43,16 +43,3 @@ const candyImages = [
     'img/Subject 17.png'
 ];
 
-// Adjust the size of the candy images
-const candySize = '5px'; // Example size, adjust as needed
-
-// Apply the size to each candy image
-candyImages.forEach((src, index) => {
-    const img = new Image();
-    img.src = src;
-    img.style.width = candySize;
-    img.style.height = candySize;
-    document.body.appendChild(img); // Temporarily add to the DOM to apply styles
-    candyImages[index] = img.src; // Update the src with the styled image
-    document.body.removeChild(img); // Remove from the DOM
-});

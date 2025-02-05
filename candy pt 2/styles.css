@@ -92,7 +92,7 @@ button:hover {
 .candy {
     position: absolute;
     top: -50px; /* Start just above the machine */
-    width: 100px;
+    width: 50px;
     height:auto ;
     opacity: 0;
     animation: candyFall 3s forwards, candyAppear 0.5s ease-in-out forwards;
