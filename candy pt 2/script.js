@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const candyLandingZone = document.querySelector('.candy-landing-zone');
 
     const candyImages = [
-        'img/Subject 12.png', 
-        'img/Subject 13.png',
-        'img/Subject 14.png',
-        'img/Subject 15.png'
+        'img/Subject 14 copy 2.png', 
+        'img/Subject 15 copy.png',
+        'img/Subject 16.png',
+        'img/Subject 17.png'
     ];
 
     
@@ -37,8 +37,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const candyImages = [
-    'img/Subject 12.png', 
-    'img/Subject 13.png',
-    'img/Subject 14.png',
-    'img/Subject 15.png'
-]
+    'img/Subject 14 copy 2.png', 
+    'img/Subject 15 copy.png',
+    'img/Subject 16.png',
+    'img/Subject 17.png'
+];
+
+// Adjust the size of the candy images
+const candySize = '5px'; // Example size, adjust as needed
+
+// Apply the size to each candy image
+candyImages.forEach((src, index) => {
+    const img = new Image();
+    img.src = src;
+    img.style.width = candySize;
+    img.style.height = candySize;
+    document.body.appendChild(img); // Temporarily add to the DOM to apply styles
+    candyImages[index] = img.src; // Update the src with the styled image
+    document.body.removeChild(img); // Remove from the DOM
+});
