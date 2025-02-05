@@ -44,8 +44,10 @@ container.addEventListener('mouseleave', function () {
 
 
 
+
+
 // Get references to the elements
-const hoverText = document.querySelector('.backimg');
+const hoverText = document.querySelector('.hover-me');
 const hoverBox = document.getElementById('hover-box');
 
 
@@ -70,5 +72,5 @@ hoverText.addEventListener('mousemove', (e) => {
  hoverBox.style.top = e.pageY + offsetY + 'px';
 
 
- hoverBox.textContent = 'TEXT THAT WILL POP UP IN THE HOVER BOX!!!';  // Text to display
+ hoverBox.textContent = 'I wanted to eat these so bad as a kid';  // Text to display
 });

@@ -266,15 +266,18 @@ margin-right: 40px;
 
 
 
-  .hover-box {
+ 
+
+  
+.hover-box {
     position: absolute;
     display: none;
     padding: 10px;
-    border:solid 1px;
-    border-color:rgb(188, 224, 223);
+   
+   
     color:rgb(188, 224, 223);
-    background-color: #414141;
-    font-size: 14px;
+  
+    font-size: 20px;
     pointer-events: none;
     white-space: nowrap;
   }

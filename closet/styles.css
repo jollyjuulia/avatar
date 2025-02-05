@@ -8,6 +8,9 @@ body, html {
     position: relative;
 }
 
+
+
+
 .container::before {
     content: '';
     position: absolute;
@@ -16,16 +19,38 @@ body, html {
     right: 0;
     bottom: 0;
     z-index: 1; /* Place the border behind the content */
-    background-image: url('img/Untitled_Artwork\ 32.png'); /* Your overlay border image */
-    background-size: cover; /* Ensures the image fills the border area */
+    background-image: url('img/U-14q9-1.gif'); /* Your overlay border image */
+    background-size: 150%; /* Zoom in the image */
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.25; /* Lower the opacity */
+    animation: loopGif 10s infinite; /* Loop the GIF */
+
+    pointer-events: none; /* Prevent interaction with the border */
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3; /* Place the border behind the content */
+    background-image: url('img/Untitled_Artwork\ 32.png'); /* Your overlay border image */
+    background-size: 100vw; /* Zoom in the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    
 
     pointer-events: none; /* Prevent interaction with the border */
 }
 body{
+    
     background-image:url(img/backtexture.jpg);
     background-size:cover;
+    z-index: 2;
+    cursor: url('img/Resize\ image\ project.png'), auto; /* Replace with your cursor image */
 }
 
 /* Container for all images */
@@ -40,8 +65,8 @@ body{
 /* Flying images (PNGs) */
 .flying-image {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: auto;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -64,4 +89,10 @@ body{
 }
 #image5 {
     background-image: url('bag.png'); /* Replace with your image */
+}
+
+
+
+.flying-image img{
+    width: 300px
 }

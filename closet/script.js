@@ -27,7 +27,7 @@ function moveAwayFromMouse(event) {
         const deltaY = imageCenterY - event.clientY;
 
         const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-        const moveDistance = 100; // Move the image away by 100px
+        const moveDistance = 50; // Move the image away by 100px
 
         // Calculate the direction and move the image away from the mouse
         const moveX = (deltaX / distance) * moveDistance;
