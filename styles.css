@@ -266,8 +266,8 @@ margin-right: 40px;
 
 
 
-.hover-box {
-    
+  .hover-box {
+    position: absolute;
     display: none;
     padding: 10px;
     border:solid 1px;

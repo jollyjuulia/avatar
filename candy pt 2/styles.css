@@ -1,0 +1,216 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+    height: 100vh/* Optional: Adjust the gap between grid items */
+}
+/* Centering everything */
+body {
+    font-family: Arial, sans-serif;
+  background-image: url(img/mall\ candy.jpg);
+  background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh 100vw;
+    cursor: url('img/Subject\ 14\ copy.png') 30 30, auto;
+
+}
+
+/* Candy machine container */
+.machine-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+/* The machine itself */
+.machine {
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px; /* Adjust this value to move the machine down */
+}
+
+.machine img{
+    width: 100vh;
+    
+}
+
+/*  */
+
+/* The area where candies will "fall" */
+.candy-landing-zone {
+    position: absolute;
+    bottom: -15px; /* Moved up by increasing the bottom value */
+    width: 8%;
+    height: 300px;
+    
+   
+   
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+/* The button */
+button {
+    position: absolute;
+    bottom: 325px; /* Moved up by increasing the bottom value */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+button:hover {
+    transform: rotate(45deg); /* Rotate 15 degrees on hover */
+    cursor: pointer;
+}
+
+.button img{
+    size: cover
+    
+}
+
+/* Candy images styling */
+.candy {
+    position: absolute;
+    top: -50px; /* Start just above the machine */
+    width: 100px;
+    height:auto ;
+    opacity: 0;
+    animation: candyFall 3s forwards, candyAppear 0.5s ease-in-out forwards;
+}
+
+/* Animation for the candy falling */
+@keyframes candyFall {
+    0% {
+        transform: translateY(-150px) rotate(0deg); /* Start above the machine */
+    }
+    100% {
+        transform: translateY(200px) rotate(360deg); /* Fall down and spin */
+        opacity: 1;
+    }
+}
+
+/* Candy appearance effect */
+@keyframes candyAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.img{
+    width: 100px
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+}
+
+.asset {
+    position: relative;
+    width: 300px;
+    height: 300px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 2;
+  
+}
+
+/* Add the tilt effect on hover */
+.asset:hover {
+    transform: rotate(-10deg); /* Slight tilt */
+    
+}
+
+.asset::after {
+    content: "★"; /* Star character */
+    position: absolute;
+    font-size: 250px;
+    color: rgb(242, 255, 3);
+    opacity: 0; /* Initially hidden */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Prevent the star from blocking interaction */
+    z-index: -1;
+   
+}
+
+/* When hovering over the asset, make the star visible and animate */
+.asset:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5); /* Make the star "pop" */
+}
+
+.asset1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 2;
+  
+}
+
+/* Add the tilt effect on hover */
+.asset1:hover {
+    transform: rotate(10deg); /* Slight tilt */
+    
+}
+
+.asset1::after {
+    content: "★"; /* Star character */
+    position: absolute;
+    font-size: 250px;
+    color: rgb(242, 255, 3);
+    opacity: 0; /* Initially hidden */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Prevent the star from blocking interaction */
+    z-index: -1;
+   
+}
+
+/* When hovering over the asset, make the star visible and animate */
+.asset1:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5); /* Make the star "pop" */
+}
