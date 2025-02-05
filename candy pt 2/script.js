@@ -43,3 +43,35 @@ const candyImages = [
     'img/Subject 17.png'
 ];
 
+
+
+// Get references to the elements
+const hoverText = document.querySelector('.hover-me');
+const hoverBox = document.getElementById('hover-box');
+
+
+// Show hover text when hovering over .text-edit
+hoverText.addEventListener('mouseenter', () => {
+ hoverBox.style.display = 'block';  // Show the hover box
+});
+
+
+hoverText.addEventListener('mouseleave', () => {
+ hoverBox.style.display = 'none';  // Hide the hover box
+});
+
+
+hoverText.addEventListener('mousemove', (e) => {
+ const offsetX = 10;  // Horizontal distance from cursor
+ const offsetY = 10;  // Vertical distance from cursor
+
+
+ // Position the hover box near the mouse cursor
+ hoverBox.style.left = e.pageX + offsetX + 'px';
+ hoverBox.style.top = e.pageY + offsetY + 'px';
+
+
+ hoverBox.textContent = 'I wanted to eat these so bad as a kid';  // Text to display
+});
+
+

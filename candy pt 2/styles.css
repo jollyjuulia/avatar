@@ -52,7 +52,7 @@ body {
 /* The area where candies will "fall" */
 .candy-landing-zone {
     position: absolute;
-    bottom: -15px; /* Moved up by increasing the bottom value */
+    bottom: 90px; /* Moved up by increasing the bottom value */
     width: 8%;
     height: 300px;
     
@@ -67,7 +67,7 @@ body {
 /* The button */
 button {
     position: absolute;
-    bottom: 325px; /* Moved up by increasing the bottom value */
+    bottom: 425px; /* Moved up by increasing the bottom value */
     width: 120px;
     height: 120px;
     border-radius: 50%; /* Make it a circle */
@@ -214,3 +214,18 @@ button:hover {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.5); /* Make the star "pop" */
 }
+
+
+.hover-box {
+    position: absolute;
+    display: none;
+    padding: 10px;
+   
+   
+    color:rgb(188, 224, 223);
+  
+    font-size: 20px;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+ 
