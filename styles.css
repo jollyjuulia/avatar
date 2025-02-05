@@ -66,7 +66,7 @@ body {
     background-image: url(img/new.png);
    background-size: cover;
 body, img:hover {
-    cursor: url('img/magGlass.png') 30 30, auto;
+    cursor: url('img/magGlass.png') 90 90, auto;
 }
 
 
@@ -137,8 +137,12 @@ h1 {
 
 /* Change image on hover */
 .png-image:hover {
-    content: url('img/color\ makeup.png'); /* Switch to colored version */
+    content: url('img/color\ makeup.png');
+   
+    cursor: url('img/magGlass.png') 90 90, auto; /* Ensure custom cursor remains */
 }
+
+
 
 .png-img {
    
@@ -259,3 +263,19 @@ color: yellow;
 margin-bottom: 90px;
 margin-right: 40px;
 }
+
+
+
+.hover-box {
+    
+    display: none;
+    padding: 10px;
+    border:solid 1px;
+    border-color:rgb(188, 224, 223);
+    color:rgb(188, 224, 223);
+    background-color: #414141;
+    font-size: 14px;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+ 

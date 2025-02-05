@@ -26,3 +26,20 @@ updateText();
 
 // Change the text every 3 seconds (3000 ms)
 setInterval(updateText, 5000);
+
+
+// Select the image container
+const container = document.querySelector('.image-container');
+
+// When the mouse enters the image container, increase cursor size
+container.addEventListener('mouseenter', function () {
+    document.body.style.cursor = 'url("img/magGlass.png") 20 20, auto'; // Use a larger cursor image
+});
+
+// When the mouse leaves the image container, reset the cursor
+container.addEventListener('mouseleave', function () {
+    document.body.style.cursor = 'url("img/magGlass.png") 20 20, auto'; // Use a default-sized cursor
+});
+
+
+
