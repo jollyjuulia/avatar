@@ -69,6 +69,7 @@ body, img:hover {
     cursor: url('img/magGlass.png') 30 30, auto;
 }
 
+
 img:hover {
     transform: scale(1.1); /* Grow the image */
     rotate: -15deg

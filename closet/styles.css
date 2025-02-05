@@ -1,0 +1,67 @@
+/* Basic reset for margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Place the border behind the content */
+    background-image: url('img/Untitled_Artwork\ 32.png'); /* Your overlay border image */
+    background-size: cover; /* Ensures the image fills the border area */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    pointer-events: none; /* Prevent interaction with the border */
+}
+body{
+    background-image:url(img/backtexture.jpg);
+    background-size:cover;
+}
+
+/* Container for all images */
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Flying images (PNGs) */
+.flying-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none; /* Prevents images from interfering with mouse interactions */
+    transition: transform 0.2s ease-out; /* Smooth transition */
+}
+
+/* Custom PNGs (replace with your own images) */
+#image1 {
+    background-image: url('shirt.png'); /* Replace with your image */
+}
+#image2 {
+    background-image: url('hat.png'); /* Replace with your image */
+}
+#image3 {
+    background-image: url('jacket.png'); /* Replace with your image */
+}
+#image4 {
+    background-image: url('shoes.png'); /* Replace with your image */
+}
+#image5 {
+    background-image: url('bag.png'); /* Replace with your image */
+}

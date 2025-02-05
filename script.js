@@ -3,7 +3,7 @@ const phrases = [
     "a bowl of candy.",
     "a bomber jacket from 2017.",
     "a scholastic book fair catalog.",
-    "old makeup."
+    "old blush with foundation brush."
 ];
 
 // Variable to keep track of which phrase to display
