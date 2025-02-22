@@ -1,4 +1,4 @@
-/* Basic reset for margin and padding */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -18,15 +18,15 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1; /* Place the border behind the content */
-    background-image: url('img/U-14q9-1.gif'); /* Your overlay border image */
-    background-size: 150%; /* Zoom in the image */
+    z-index: 1; 
+    background-image: url('img/U-14q9-1.gif'); 
+    background-size: 150%; 
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.25; /* Lower the opacity */
-    animation: loopGif 10s infinite; /* Loop the GIF */
+    opacity: 0.25; 
+    animation: loopGif 10s infinite; 
 
-    pointer-events: none; /* Prevent interaction with the border */
+    pointer-events: none; 
 }
 
 .container::after {
@@ -36,24 +36,24 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 3; /* Place the border behind the content */
-    background-image: url('img/Untitled_Artwork\ 32.png'); /* Your overlay border image */
-    background-size: 100vw; /* Zoom in the image */
+    z-index: 3; 
+    background-image: url('img/Untitled_Artwork\ 32.png'); 
+    background-size: 100vw; 
     background-position: center;
     background-repeat: no-repeat;
     
 
-    pointer-events: none; /* Prevent interaction with the border */
+    pointer-events: none; 
 }
 body{
     
     background-image:url(img/backtexture.jpg);
     background-size:cover;
     z-index: 2;
-    cursor: url('img/Resize\ image\ project.png'), auto; /* Replace with your cursor image */
+    cursor: url('img/Resize\ image\ project.png'), auto; 
 }
 
-/* Container for all images */
+
 .container {
     position: absolute;
     width: 100%;
@@ -62,7 +62,7 @@ body{
     flex-wrap: wrap;
 }
 
-/* Flying images (PNGs) */
+
 .flying-image {
     position: absolute;
     width: 50px;
@@ -70,25 +70,25 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    pointer-events: none; /* Prevents images from interfering with mouse interactions */
-    transition: transform 0.2s ease-out; /* Smooth transition */
+    pointer-events: none; 
+    transition: transform 0.2s ease-out; 
 }
 
-/* Custom PNGs (replace with your own images) */
+
 #image1 {
-    background-image: url('shirt.png'); /* Replace with your image */
+    background-image: url('shirt.png'); 
 }
 #image2 {
-    background-image: url('hat.png'); /* Replace with your image */
+    background-image: url('hat.png');
 }
 #image3 {
-    background-image: url('jacket.png'); /* Replace with your image */
+    background-image: url('jacket.png'); 
 }
 #image4 {
-    background-image: url('shoes.png'); /* Replace with your image */
+    background-image: url('shoes.png'); 
 }
 #image5 {
-    background-image: url('bag.png'); /* Replace with your image */
+    background-image: url('bag.png'); 
 }
 
 

@@ -1,9 +1,9 @@
-/* Basic page styling */
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;  /* Prevent horizontal scrolling */
+    overflow-x: hidden;  
     cursor: url('img/magGlass.png') 30 30, auto;
 }
 
@@ -13,7 +13,7 @@ body {
 
 .section {
     width: 100%;
-    height: 100vh;  /* Full viewport height */
+    height: 100vh;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body {
     overflow: hidden;
 }
 
-/* Background image styling */
+
 .section::before {
     content: '';
     position: absolute;
@@ -29,46 +29,46 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('img/mall\ candy.jpg'); /* Replace with your image */
+    background-image: url('img/mall\ candy.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    z-index: 0;  /* Set the background behind content */
+    z-index: 0; 
 }
 
-/* Styling for items */
+
 .item {
     position: absolute;
-    opacity: 0;  /* Start as invisible */
+    opacity: 0; 
     transition: transform 1s ease, opacity 1s ease;
-    z-index: 1;  /* Ensure the items are above the background */;
+    z-index: 1; ;
 }
 
-/* Items from left */
+
 .left-item {
-    transform: translateX(-100%);  /* Start off-screen to the left */
+    transform: translateX(-100%); 
 }
 
 .left-item img{
     width: 200px
 }
 
-/* Items from right */
+
 .right-item {
-    transform: translateX(100%);  /* Start off-screen to the right */
+    transform: translateX(100%); 
 }
 
 .right-item img{
     width: 200px
 }
 
-/* When items are scrolled into view */
+
 .item.show {
     opacity: 1;
-    transform: translateX(0);  /* Move into position */
+    transform: translateX(0);  
 }
 
-/* Basic text styles */
+
 h1, p {
     font-size: 2rem;
     color: white;
@@ -91,29 +91,29 @@ h1, p {
   
 }
 
-/* Add the tilt effect on hover */
+
 .asset:hover {
-    transform: rotate(10deg); /* Slight tilt */
+    transform: rotate(10deg); 
     
 }
 
 .asset::after {
-    content: "★"; /* Star character */
+    content: "★"; 
     position: absolute;
     font-size: 250px;
     color: rgb(242, 255, 3);
-    opacity: 0; /* Initially hidden */
+    opacity: 0; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none; /* Prevent the star from blocking interaction */
+    pointer-events: none; 
     z-index: -1;
    
 }
 
-/* When hovering over the asset, make the star visible and animate */
+
 .asset:hover::after {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1.5); /* Make the star "pop" */
+    transform: translate(-50%, -50%) scale(1.5);
 }

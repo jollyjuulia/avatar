@@ -1,11 +1,11 @@
-// Function to generate a random position
+
 function getRandomPosition() {
     const x = Math.random() * window.innerWidth;
     const y = Math.random() * window.innerHeight;
     return { x, y };
 }
 
-// Function to set random positions for images
+
 function setRandomPositions() {
     const images = document.querySelectorAll('.flying-image');
     images.forEach((image) => {
@@ -15,7 +15,7 @@ function setRandomPositions() {
     });
 }
 
-// Function to move image away from the mouse
+
 function moveAwayFromMouse(event) {
     const images = document.querySelectorAll('.flying-image');
     images.forEach((image) => {
@@ -27,32 +27,31 @@ function moveAwayFromMouse(event) {
         const deltaY = imageCenterY - event.clientY;
 
         const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-        const moveDistance = 50; // Move the image away by 100px
+        const moveDistance = 50; 
 
-        // Calculate the direction and move the image away from the mouse
+
         const moveX = (deltaX / distance) * moveDistance;
         const moveY = (deltaY / distance) * moveDistance;
 
-        // Apply the new position
+  
         image.style.transform = `translate(${moveX}px, ${moveY}px)`;
     });
 }
-// Set random positions initially
+
 setRandomPositions();
 
-// Override the initial positions to be higher on the screen
 const images = document.querySelectorAll('.flying-image');
 images.forEach((image) => {
     const { x } = getRandomPosition();
-    const y = Math.random() * (window.innerHeight / 2); // Position in the upper half of the screen
+    const y = Math.random() * (window.innerHeight / 2); 
     image.style.left = `${x}px`;
     image.style.top = `${y}px`;
 });
 
-// Move the images when mouse moves
+
 document.addEventListener('mousemove', moveAwayFromMouse);
 
-// Reset the images when the mouse is not hovering
+
 document.addEventListener('mouseleave', () => {
     const images = document.querySelectorAll('.flying-image');
     images.forEach(image => {

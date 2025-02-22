@@ -32,30 +32,30 @@
   
 }
 
-/* Add the tilt effect on hover */
+
 .asset:hover {
-    transform: rotate(10deg); /* Slight tilt */
+    transform: rotate(10deg);
     
 }
 
 .asset::after {
-    content: "★"; /* Star character */
+    content: "★"; 
     position: absolute;
     font-size: 50px;
     color: gold;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none; /* Prevent the star from blocking interaction */
+    pointer-events: none; 
     z-index: -1;
 }
 
-/* When hovering over the asset, make the star visible and animate */
+
 .asset:hover::after {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1.5); /* Make the star "pop" */
+    transform: translate(-50%, -50%) scale(1.5); 
 }
 
 
@@ -71,7 +71,7 @@ body, img:hover {
 
 
 img:hover {
-    transform: scale(1.1); /* Grow the image */
+    transform: scale(1.1); 
     rotate: -15deg
 }
    
@@ -90,7 +90,7 @@ h1 {
     grid-template-rows: repeat(14, 1fr);
     grid-template-columns: repeat(8, 1fr);
     width: 100%;
-    height: 100vh; /* Ensure the container has a height */
+    height: 100vh; 
 }
 
 .candy{
@@ -101,7 +101,7 @@ h1 {
     width: 200px;
     rotate: -10deg;
     display: block;
-    transform: translateX(12px); /* Move to the right */
+    transform: translateX(12px); 
 }
 
 .makeup{
@@ -111,9 +111,7 @@ h1 {
 .makeup img{
     display: block;
     width: 300px;
-    /* height: 100px; */
-    /* rotate: -38deg; */
-    /* Scoot up a little and to the left */
+ 
 }
 
 
@@ -125,21 +123,21 @@ h1 {
     display: block;
     width: 225px;
    
-   /* Move down and to the left */
+
     
 }
 
 .png-image {
-    width: 200px; /* Adjust the image size */
+    width: 200px; 
     height: auto;
-    transition: 0.3s ease; /* Smooth transition */
+    transition: 0.3s ease;
 }
 
-/* Change image on hover */
+
 .png-image:hover {
     content: url('img/color\ makeup.png');
    
-    cursor: url('img/magGlass.png') 90 90, auto; /* Ensure custom cursor remains */
+    cursor: url('img/magGlass.png') 90 90, auto; 
 }
 
 
@@ -147,41 +145,41 @@ h1 {
 .png-img {
    
     height: auto;
-    transition: 0.3s ease; /* Smooth transition */
+    transition: 0.3s ease; 
 }
 
-/* Change image on hover */
+
 .png-img:hover {
-    content: url('img/jacket\ copy.png'); /* Switch to colored version */
+    content: url('img/jacket\ copy.png'); 
 }
 
 
 .pngimg {
    
     height: auto;
-    transition: 0.3s ease; /* Smooth transition */
+    transition: 0.3s ease; 
 }
 
-/* Change image on hover */
+
 .pngimg:hover {
-    content: url('img/xuw21udmp4o91-2\ copy.jpg'); /* Switch to colored version */
+    content: url('img/xuw21udmp4o91-2\ copy.jpg'); 
 }
 
 .p-img {
    
     height: auto;
-    transition: 0.3s ease; /* Smooth transition */
+    transition: 0.3s ease; 
 }
 
-/* Change image on hover */
+
 .p-img:hover {
-    content: url('img/candhy\ copy.png'); /* Switch to colored version */
+    content: url('img/candhy\ copy.png'); 
 }
 .ispy{
     grid-area: 1/4/4/6;
     display: flex;
     flex-direction: column;
-    height: 25vh; /* 25% of the viewport height */
+    height: 25vh;
     
 }
 
@@ -203,7 +201,7 @@ h1 {
     font-weight: 500;
     font-style: normal;
     font-size: 50px;
-    margin-top: 0; /* Remove top margin */
+    margin-top: 0;
 }
 
 
@@ -215,20 +213,19 @@ h1 {
 
 .backimg{
     grid-area: 1/3/3/5;
-    transform: translate(120px, -95px); /* Move higher and to the right */
+    transform: translate(120px, -95px);
     z-index: -1;
 }
 
 .text-box{
-grid-area: 3/4/5/7; /* Move the text box up by changing the grid area */
+grid-area: 3/4/5/7;
 z-index: 3;
 display: flex;
 justify-content: center;
 align-items: center;
-/* margin-bottom: 100px; */
-/* margin-right: -200px; */
+
 justify-content: center;
-/* align-items: center; */
+
 margin-top: 40px;
 flex-direction: row;
 
@@ -243,14 +240,14 @@ flex-direction: row;
         width: 225px;
        
         rotate: 20deg;
-        transform: translateY(px) translateX(215px); /* Move down and to the left */
+        transform: translateY(px) translateX(215px); 
         
     
 }
 
-/* Basic styling for the text container */
+
 .text-container {
-    grid-area: 3/3/5/7; /* Move the text box up by changing the grid area */
+    grid-area: 3/3/5/7; 
 z-index: 3;
 display: flex;
 
