@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/wallpaper.jpg);
+    cursor: url('img/wii.png') 30 30, auto;
+    
+    background-size: cover;
+  }
+  
+  
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+  gap: 10px;
+    width: 200%; /* Ensure the container is wider than the viewport */
+    height: 80vh;
+    overflow-x: scroll;
+    
+    box-sizing: border-box;
+    margin-top: -150px; /* Adjust this value to move closer to the top */
+    /* Adjust this value to move closer to the left */
+  }
+
+  .grid-container .page-1,
+  .grid-container .page-2 {
+    flex: 0 0 100%; /* Each page takes up half of the container width */
+  }
+
+
+  .grid-item {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    padding-bottom: 56.25%; /* Aspect ratio for YouTube thumbnail */
+    
+    border-radius: 20px; /* Optional: rounded corners */
+    overflow: hidden; /* Ensures frame effect doesn't overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 50px;
+    margin: 2px; /* Add margin to space items apart */
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  /* Thumbnail image style */
+  .grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Matches rounded corners of container */
+  }
+  
+  /* Frame effect and hover effect */
+  .grid-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Overlay frame */
+    pointer-events: none;
+  }
+
+  .grid-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .page-1 {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 50%;
+    width: 100vw;
+    justify-items: center; 
+    align-items: center;  */
+  display: flex;
+  flex-direction: column
+  }
+
+
+  .page-2 {
+    display: flex;
+  flex-direction: column
+  }
+  .row-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    justify-content: center; /* Changed from space-evenly to space-around */
+    align-items: center;
+    gap: 140px; /* Adjust this value to change the space between images */
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  
+
+  .row-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    justify-content: center; /* Changed from space-evenly to space-around */
+    align-items: center;
+    gap: 140px; /* Adjust this value to change the space between images */
+    margin-bottom: 136px;
+    margin-left: 25px;
+  }
+
+  
+  .grid-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; 
+    background-image: url('img/static.gif'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; 
+
+    pointer-events: none; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  
+  overflow-x: auto; 
+  white-space: nowrap; 
+
+}
+
+
+button {
+  outline: none;
+}
+
+
+button {
+  
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.gird-container {
+  width: 80%; /* Adjust the width as needed */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of content */
+  border: 2px solid #000; /* Border for visibility */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.content {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.item {
+  display: inline-block;
+  width: 200px;
+  height: 150px;
+  background-color: lightblue;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 20px;
+  border: 1px solid #333;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the button */
+  z-index: 10;
+}
+
+#scrollLeftButton {
+  left: 10px; /* Position left button */
+}
+
+#scrollRightButton {
+  right: 10px; /* Position right button */
+}
+
+.scroll-btn-image {
+  width: 200px; /* Set width of the custom scroll button */
+  height: 200px; /* Set height of the custom scroll button */
+}
+
+.row-11{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90%;
+  justify-content: center; /* Changed from space-evenly to space-around */
+  align-items: center;
+  gap: 140px; /* Adjust this value to change the space between images */
+  margin-top: 50px;
+  margin-left: -10px;
+}
+
+
+.row-22{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90%;
+  justify-content: center; /* Changed from space-evenly to space-around */
+  align-items: center;
+  gap: 140px; /* Adjust this value to change the space between images */
+  margin-bottom: 136px;
+  margin-left: -10px;
+}
+
