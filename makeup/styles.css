@@ -18,18 +18,17 @@ body {
     display: flex;
     flex-direction: row;
   gap: 10px;
-    width: 200%; /* Ensure the container is wider than the viewport */
+    width: 200%; 
     height: 80vh;
     overflow-x: scroll;
     
     box-sizing: border-box;
-    margin-top: -150px; /* Adjust this value to move closer to the top */
-    /* Adjust this value to move closer to the left */
+    margin-top: -150px; 
   }
 
   .grid-container .page-1,
   .grid-container .page-2 {
-    flex: 0 0 100%; /* Each page takes up half of the container width */
+    flex: 0 0 100%; 
   }
 
 
@@ -37,18 +36,18 @@ body {
     position: relative;
     width: 450px;
     height: 300px;
-    padding-bottom: 56.25%; /* Aspect ratio for YouTube thumbnail */
+    padding-bottom: 56.25%; 
     
-    border-radius: 20px; /* Optional: rounded corners */
-    overflow: hidden; /* Ensures frame effect doesn't overflow */
+    border-radius: 20px; 
+    overflow: hidden; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 50px;
-    margin: 2px; /* Add margin to space items apart */
+    margin: 2px; 
     margin-bottom: 20px;
     margin-left: 20px;
   }
 
-  /* Thumbnail image style */
+ 
   .grid-item img {
     position: absolute;
     top: 0;
@@ -58,13 +57,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px; /* Matches rounded corners of container */
+    border-radius: 20px; 
   }
   
-  /* Frame effect and hover effect */
+ 
   .grid-item:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Overlay frame */
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); 
     pointer-events: none;
   }
 
@@ -95,9 +94,9 @@ body {
     flex-direction: row;
     width: 100%;
     height: 90%;
-    justify-content: center; /* Changed from space-evenly to space-around */
+    justify-content: center; 
     align-items: center;
-    gap: 140px; /* Adjust this value to change the space between images */
+    gap: 140px; 
     margin-top: 50px;
     margin-left: 25px;
   }
@@ -108,9 +107,9 @@ body {
     flex-direction: row;
     width: 100%;
     height: 90%;
-    justify-content: center; /* Changed from space-evenly to space-around */
+    justify-content: center;
     align-items: center;
-    gap: 140px; /* Adjust this value to change the space between images */
+    gap: 140px; 
     margin-bottom: 136px;
     margin-left: 25px;
   }
@@ -166,10 +165,10 @@ body {
 }
 
 .gird-container {
-  width: 80%; /* Adjust the width as needed */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent wrapping of content */
-  border: 2px solid #000; /* Border for visibility */
+  width: 80%; 
+  overflow-x: auto; 
+  white-space: nowrap; 
+  border: 2px solid #000;
   margin-bottom: 20px;
   position: relative;
 }
@@ -197,21 +196,21 @@ button {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Vertically center the button */
+  transform: translateY(-50%); 
   z-index: 10;
 }
 
 #scrollLeftButton {
-  left: 10px; /* Position left button */
+  left: 10px;
 }
 
 #scrollRightButton {
-  right: 10px; /* Position right button */
+  right: 10px; 
 }
 
 .scroll-btn-image {
-  width: 200px; /* Set width of the custom scroll button */
-  height: 200px; /* Set height of the custom scroll button */
+  width: 200px; 
+  height: 200px; 
 }
 
 .row-11{
@@ -219,9 +218,9 @@ button {
   flex-direction: row;
   width: 100%;
   height: 90%;
-  justify-content: center; /* Changed from space-evenly to space-around */
+  justify-content: center;
   align-items: center;
-  gap: 140px; /* Adjust this value to change the space between images */
+  gap: 140px; 
   margin-top: 50px;
   margin-left: -10px;
 }
@@ -232,9 +231,9 @@ button {
   flex-direction: row;
   width: 100%;
   height: 90%;
-  justify-content: center; /* Changed from space-evenly to space-around */
+  justify-content: center;
   align-items: center;
-  gap: 140px; /* Adjust this value to change the space between images */
+  gap: 140px; 
   margin-bottom: 136px;
   margin-left: -10px;
 }
