@@ -34,18 +34,18 @@ body {
 
   .grid-item {
     position: relative;
-    width: 450px;
+    width: auto;
     height: 300px;
-    padding-bottom: 56.25%; 
+    /* padding-bottom: 56.25%;  */
     
     border-radius: 20px; 
     overflow: hidden; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 50px;
+    /* padding: 50px;
     margin: 2px; 
     margin-bottom: 150px;
     margin-left: 20px;
-    margin-top: -20px;
+    margin-top: -20px; */
   }
 
  
@@ -53,8 +53,8 @@ body {
     /* position: absolute; */
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
